@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/public/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navbar Section -->
+        <div class="upper-navbar">
+            <div class="navbar-section">
+                <img src="/public/images/image 4.png" alt="India Emblem" class="emblem">
+                <div class="text">
+                    <h2>Government of National Capital Territory</h2>
+                    <p>राष्ट्रीय राजधानी क्षेत्र दिल्ली सरकार</p>
+                </div>
+            </div>
+            <div class="navbar-section">
+                <img src="/public/images/Frame 60.png" alt="Delhi Government Logo" class="delhi-logo">
+                <img src="/public/images/image 6.png" alt="Election Logo" class="election-logo">
+            </div>
+        </div>
+    
+        <header class="navbar">
+            <div class="brand">
+                <img src="/public/images/SarvaSvasthaLogo.svg"/>
+            </div>
+            <div class="nav-right">
+                <div class="logout">
+                    <a href="#">Logout</a>
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                </div>
+            </div>
+        </header>
+    </div>
+
+
+    <div class="side">
+        <div class="left-side">
+            <div class="hospital-name">
+                <p><img src="/public/images/solar_hospital-line-duotone.png" class="hosp-img"/><strong>AIIMS,DELHI</strong></p></div>
+            <div class="hospital-tasks">
+                <p><a href="#">DESK</a></p>
+                <p><a href="#"><strong>OPDs and BED</strong></a></p>
+                <p><a href="#">Inventory</a></p>
+            </div>
+
+
+        </div>
+        <div class="right-side">
+            <div class="topbar">
+                <div class="dashboard"> 
+                     <p><img src="/public//images/logo-image.png" class="dashB-img"/> Dashboard</p>
+                </div>
+                <div class="notify">
+                    <p><img src="/public/images/notify.png" class="notify-img"/>Notification</p>
+                </div>
+            </div>
+            <div class="opds">
+                OPDs and Beds
+            </div>
+        <div class="container1">
+        <div class="tabs">
+            <button class="tab active">Appointment</button>
+            <button class="tab">Bed Status</button>
+        </div>
+
+        <div class="appointment-section">
+            <div class="header">
+                <h2>Patient’s Appointment</h2>
+                <div class="date-picker">
+                    <label for="date">Change date:</label>
+                    <input type="date" id="date" name="date" value="2024-08-28">
+                </div>
+            </div>
+            <hr>
+
+            <div class="appointment-list">
+                
+                <div class="appointment-item">
+                    <div class="appointment-info">
+                        <span class="name"><b>Name</b></span>
+                        <span class="mobile"><b>Mobile</b></span>
+                        <span class="department"><b>Department</b></span>
+                        <span class="doctor"><b>Doctor</b></span>
+                        <span class="token"><b>token NO.</b></span>
+                        <span class="token"><b>Status</b></span>
+                        <span class="token"><b>Delete</b></span>
+                    </div>
+                </div>
+
+                <div class="appointment-item">
+                    <div class="appointment-info">
+                        <span class="name">Aaradhya Gupta</span>
+                        <span class="mobile">9229261552</span>
+                        <span class="department">Cardiology</span>
+                        <span class="doctor">Dr. Anita Seth</span>
+                        <span class="token">127</span>
+                        <span class="name"><input type="radio" name="status1"></span>
+                        <span class="name"><button class="delete-btn"><i class="fa-solid fa-trash"></i></button></span>
+                    </div>
+                </div>
+
+                <div class="appointment-item">
+                    <div class="appointment-info">
+                        <span class="name">Nihal Jhariya</span>
+                        <span class="mobile">9823746288</span>
+                        <span class="department">Cardiology</span>
+                        <span class="doctor">Dr. Anita Seth</span>
+                        <span class="token">128</span>
+                        <span class="name"><input type="radio" name="status1"></span>
+                        <span class="name"><button class="delete-btn"><i class="fa-solid fa-trash"></i></button></span>
+                    </div>
+                </div>
+                <div class="appointment-item">
+                    <div class="appointment-info">
+                        <span class="name">Nihal Jhariya</span>
+                        <span class="mobile">9823746288</span>
+                        <span class="department">Cardiology</span>
+                        <span class="doctor">Dr. Anita Seth</span>
+                        <span class="token">128</span>
+                        <span class="name"><input type="radio" name="status1"></span>
+                        <span class="name"><button class="delete-btn"><i class="fa-solid fa-trash"></i></button></span>
+                    </div>
+                </div>
+                <div class="appointment-item">
+                    <div class="appointment-info">
+                        <span class="name">Nihal Jhariya</span>
+                        <span class="mobile">9823746288</span>
+                        <span class="department">Cardiology</span>
+                        <span class="doctor">Dr. Anita Seth</span>
+                        <span class="token">128</span>
+                        <span class="name"><input type="radio" name="status1"></span>
+                        <span class="name"><button class="delete-btn"><i class="fa-solid fa-trash"></i></button></span>
+                    </div>
+                </div>
+                <div class="appointment-item">
+                    <div class="appointment-info">
+                        <span class="name">Nihal Jhariya</span>
+                        <span class="mobile">9823746288</span>
+                        <span class="department">Cardiology</span>
+                        <span class="doctor">Dr. Anita Seth</span>
+                        <span class="token">128</span>
+                        <span class="name"><input type="radio" name="status1"></span>
+                        <span class="name"><button class="delete-btn"><i class="fa-solid fa-trash"></i></button></span>
+                    </div>
+                </div>
+
+                <!-- Add more appointments as needed -->
+                <button id="open-modal-btn" class="open-modal-btn">+</button>
+                
+            </div>
+        </div>
+
+        
+    <!-- Plus Button to open the modal -->
+    
+
+    <!-- Modal Structure -->
+    <div id="appointment-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h1>New Appointment</h1>
+            <form class="appointment-form">
+                <div class="form-group">
+                    <label for="department">Department</label>
+                    <select id="department" name="department" >
+                        <option value="" disabled selected>Select Department</option>
+                        <!-- Add options here -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="doctor">Doctor</label>
+                    <select id="doctor" name="doctor" >
+                        <option value="" disabled selected>Select Doctor</option>
+                        <!-- Add options here -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="appointment-date">Select Appointment Date:</label>
+                    <div class="date-input">
+                        <input type="date" id="appointment-date" name="appointment-date"/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Patients Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter patient's name"/>
+                </div>
+                <div class="form-group">
+                    <label for="emailId">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Enter Email-Id"/>
+                </div>
+                <div class="form-group">
+                    <label for="mobile">Mobile No.</label>
+                    <input type="number" name="mobile" id="mobile" placeholder="Enter mobile No."/>
+                </div>
+                <div class="age-gender">
+                <div class="form-group age ">
+                    <label for="age">Age</label>
+                    <input type="number" name="age" id="age" placeholder="Enter Age"/>
+                </div>
+                <div class="form-group gender">
+                    <label for="gender">Gender</label>
+                    <input type="text" name="gender" id="gender" placeholder="Enter patient's name"/>
+                </div>
+            </div>
+
+                <div class="button-group">
+                    <button type="submit" class="btn-next" id="next-button">Submit</button>
+
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    
+
+
+    
+        </div>
+    </div>
+    <script src="/public/script.js"></script>
+</body>
+</html>

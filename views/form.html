@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi-Step Form</title>
+  <style>
+    /* Basic styling for the form */
+    .step {
+      display: none;
+    }
+
+    .step.active {
+      display: block;
+    }
+
+    .form-navigation {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <form id="appointmentForm">
+    <!-- Step 1: Hospital Information -->
+    <fieldset class="step active" id="step1">
+      <legend>Hospital Information</legend>
+      <label for="hospital">Select Hospital:</label>
+      <select id="hospital" name="hospital" required>
+        <option value="">Select</option>
+        <option value="hospital1">Hospital 1</option>
+        <option value="hospital2">Hospital 2</option>
+      </select>
+      <br><br>
+      <label for="department">Select Department:</label>
+      <select id="department" name="department" required>
+        <option value="">Select</option>
+        <option value="cardiology">Cardiology</option>
+        <option value="neurology">Neurology</option>
+      </select>
+      <div class="form-navigation">
+        <button type="button" onclick="nextStep()">Next</button>
+      </div>
+    </fieldset>
+
+    <!-- Step 2: Personal Information -->
+    <fieldset class="step" id="step2">
+      <legend>Personal Information</legend>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+      <br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <div class="form-navigation">
+        <button type="button" onclick="previousStep()">Previous</button>
+        <button type="submit">Submit</button>
+      </div>
+    </fieldset>
+  </form>
+
+  <script src="app.js"></script>
+</body>
+</html>
